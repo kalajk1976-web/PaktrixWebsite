@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'brand-green': '#0d9e6d',
-        'brand-teal': '#14b8a6',
+        'brand-green': '#00A650',
+        'brand-teal': '#00B4D8',
       },
       backgroundImage: {
-        'brand-gradient': 'linear-gradient(135deg, #0d9e6d 0%, #14b8a6 100%)',
+        'brand-gradient': 'linear-gradient(180deg, #00C44A 0%, #00B4D8 100%)',
       },
     },
   },

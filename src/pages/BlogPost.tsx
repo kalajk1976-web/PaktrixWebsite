@@ -122,13 +122,13 @@ export default function BlogPost() {
             )}
           </div>
 
-          {post.featured_image && (
+          {/* {post.featured_image && (
             <img
               src={post.featured_image}
               alt={post.title}
               className="w-full rounded-lg shadow-lg mb-8"
             />
-          )}
+          )} */}
 
           <div className="prose prose-lg max-w-none">
             {post.excerpt && (

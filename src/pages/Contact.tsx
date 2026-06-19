@@ -66,7 +66,7 @@ export default function Contact() {
 
   return (
     <div>
-      <section className="bg-gradient-to-r from-brand-green to-brand-teal text-white py-16">
+      <section className="bg-gradient-to-b from-brand-green to-brand-teal text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">Contact Us</h1>
           <p className="text-xl text-green-50 max-w-3xl">
@@ -271,6 +271,9 @@ export default function Contact() {
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
                     <a href="tel:+919099924140">
                       <p className="text-gray-600 hover:text-brand-green transition-colors">+91 90999 24140</p>
+                    </a>
+                    <a href="tel:+919924624140">
+                      <p className="text-gray-600 hover:text-brand-green transition-colors">+91 99246 24140</p>
                     </a>
                   </div>
                 </div>

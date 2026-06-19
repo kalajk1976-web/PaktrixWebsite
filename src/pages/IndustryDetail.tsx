@@ -456,7 +456,7 @@ interface IndustryInfoSectionData {
 
 function IndustryInfoSection({ sectionTitle, sectionSubtitle, subSections }: Omit<IndustryInfoSectionData, 'slug'>) {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{sectionTitle}</h2>
@@ -464,8 +464,8 @@ function IndustryInfoSection({ sectionTitle, sectionSubtitle, subSections }: Omi
         </div>
         <div className="space-y-8">
           {subSections.map((sub) => (
-            <div key={sub.title} className="bg-white rounded-lg shadow-md p-8 lg:p-10">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">{sub.title}</h3>
+            <div key={sub.title} className="bg-white rounded-lg shadow-md p-8 lg:p-10 border-2 border-gray-200 hover:border-brand-green hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 group">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-brand-green transition-colors duration-300">{sub.title}</h3>
               <p className="text-gray-600 mb-8 max-w-4xl">{sub.description}</p>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
                 {sub.items.map((item) => (
@@ -1001,7 +1001,7 @@ export default function IndustryDetail() {
         </Helmet>
       )}
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-brand-green to-brand-teal text-white py-20 lg:py-32">
+      <section className="relative bg-gradient-to-b from-brand-green to-brand-teal text-white py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -1031,7 +1031,6 @@ export default function IndustryDetail() {
               <img
                 src={heroSection.background_image}
                 alt=""
-                className="rounded-lg shadow-2xl"
               />
             </div>
           </div>
@@ -1041,7 +1040,7 @@ export default function IndustryDetail() {
       <ClientLogos />
 
       {/* Products grid */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-green-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -1056,7 +1055,7 @@ export default function IndustryDetail() {
               <Link
                 key={product.id}
                 to={`/products/${product.slug}`}
-                className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow group"
+                className="bg-white rounded-lg overflow-hidden border-2 border-gray-200 hover:border-brand-green hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 group"
               >
                 <div className="aspect-w-16 aspect-h-12 overflow-hidden">
                   <img
@@ -1066,7 +1065,7 @@ export default function IndustryDetail() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-brand-green transition-colors">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-brand-green transition-colors duration-300">
                     {product.name}
                   </h3>
                   <p className="text-gray-600 mb-4 line-clamp-2">
@@ -1128,7 +1127,7 @@ export default function IndustryDetail() {
       )}
 
       {/* CTA */}
-      <section className="py-16 bg-gradient-to-r from-brand-green to-brand-teal text-white">
+      <section className="py-16 bg-gradient-to-b from-brand-green to-brand-teal text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {ctaSection?.title ?? 'Get Custom Packaging Solutions for Your Business'}

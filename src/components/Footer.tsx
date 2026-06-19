@@ -15,7 +15,7 @@ export default function Footer() {
               className="h-20 w-48 object-contain object-left"
               style={{ filter: 'brightness(1.1)' }}
             />
-            <p className="text-sm text-gray-400">Quality Packaging Solutions.</p>
+            <p className="text-sm text-gray-400">Packaging Solutions | Mono Cartons | Folding Cartons | Luxury Packaging</p>
           </div>
 
           <div
@@ -34,15 +34,21 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-sm text-gray-200 hover:text-brand-teal hover:underline underline-offset-2 transition-colors"
               >
-                <span className="font-semibold text-white">Address:</span>{' '}
+                <span className="font-semibold text-white">Registered Address:</span>{' '}
                 336, LA Victoria, near galaxy circle, PAL, Surat - 394510 - Gujarat, India
               </a>
             </div>
 
-            <div className="flex flex-wrap items-center gap-6">
-              <a href="tel:+919099924140" className="text-sm text-gray-200 hover:text-brand-teal hover:underline underline-offset-2 transition-colors">
-                <span className="font-semibold text-white">Call:</span> +91 90999 24140
-              </a>
+            <div className="flex flex-wrap items-center gap-16">
+              <div className="flex items-center gap-3">
+                <a href="tel:+919099924140" className="text-sm text-gray-200 hover:text-brand-teal hover:underline underline-offset-2 transition-colors">
+                  <span className="font-semibold text-white">Call:</span> +91 90999 24140
+                </a>
+                <span className="text-gray-500">|</span>
+                <a href="tel:+919924624140" className="text-sm text-gray-200 hover:text-brand-teal hover:underline underline-offset-2 transition-colors">
+                  +91 99246 24140
+                </a>
+              </div>
               <a href="mailto:info@paktrix.com" className="text-sm text-gray-200 hover:text-brand-teal hover:underline underline-offset-2 transition-colors">
                 <span className="font-semibold text-white">Mail:</span> info@paktrix.com
               </a>
@@ -74,6 +80,16 @@ export default function Footer() {
               style={{ background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)' }}
             >
               <Instagram className="h-5 w-5 text-white" />
+            </a>
+            <a
+              href="https://in.linkedin.com/in/paktrix-packaging-712873415"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="w-10 h-10 rounded-full flex items-center justify-center transition-opacity hover:opacity-80"
+              style={{ background: 'linear-gradient(135deg, #0A66C2 0%, #004182 100%)' }}
+            >
+              <Linkedin className="h-5 w-5 text-white" />
             </a>
             
           </div>

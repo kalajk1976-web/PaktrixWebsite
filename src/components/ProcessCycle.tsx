@@ -79,7 +79,7 @@ export default function ProcessCycle() {
   }, [currentIndex]);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-20 bg-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -104,7 +104,7 @@ export default function ProcessCycle() {
                 className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 px-4 snap-center"
               >
                 <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 h-full border-2 border-brand-green relative group">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-green via-[#10a5a4] to-brand-green rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-b from-brand-green via-[#10a5a4] to-brand-green rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                   <div className="flex items-start mb-6">
                     <div className="relative">

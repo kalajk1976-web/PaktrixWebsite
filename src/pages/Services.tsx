@@ -111,7 +111,7 @@ export default function Services() {
         <title>Service Packaging & Product Packaging Services | Paktrix</title>
         <meta name="description" content="Paktrix offers reliable service packaging and product packaging services with custom, durable, and innovative solutions for brands across India." />
       </Helmet>
-      <section className="bg-gradient-to-r from-brand-green to-brand-teal text-white py-16">
+      <section className="bg-gradient-to-b from-brand-green to-brand-teal text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">Industrial Services</h1>
           <p className="text-xl text-green-50 max-w-3xl">
@@ -127,7 +127,7 @@ export default function Services() {
               <Link
                 key={industry.slug}
                 to={`/industry/${industry.slug}`}
-                className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow group flex flex-col"
+                className="bg-white rounded-lg overflow-hidden border-2 border-gray-200 hover:border-brand-green hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 group flex flex-col"
               >
                 <div className="aspect-w-16 aspect-h-12 overflow-hidden">
                   <img
@@ -137,7 +137,7 @@ export default function Services() {
                   />
                 </div>
                 <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-xl font-semibold mb-3 group-hover:text-brand-green transition-colors">
+                  <h3 className="text-xl font-semibold mb-3 group-hover:text-brand-green transition-colors duration-300">
                     {industry.title}
                   </h3>
                   <p className="text-gray-600 mb-4 flex-1">
@@ -171,12 +171,12 @@ export default function Services() {
               return (
                 <div
                   key={index}
-                  className="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-xl transition-shadow"
+                  className="bg-white border-2 border-gray-200 rounded-lg p-8 hover:border-brand-green hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 group"
                 >
                   <div className="inline-flex items-center justify-center w-14 h-14 bg-green-100 rounded-lg mb-4">
                     <IconComponent className="h-7 w-7 text-brand-green" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-brand-green transition-colors duration-300">
                     {service.title}
                   </h3>
                   <p className="text-gray-600 mb-4 leading-relaxed">
@@ -247,7 +247,7 @@ export default function Services() {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-brand-green to-brand-teal rounded-2xl p-12 text-center text-white">
+          <div className="bg-gradient-to-b from-brand-green to-brand-teal rounded-2xl p-12 text-center text-white">
             <h2 className="text-3xl font-bold mb-4">
               Ready to Start Your Project?
             </h2>

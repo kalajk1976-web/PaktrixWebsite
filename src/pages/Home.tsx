@@ -57,7 +57,7 @@ export default function Home() {
 
   return (
     <div>
-      <section className="relative bg-gradient-to-br from-brand-green to-brand-teal text-white py-20 lg:py-32">
+      <section className="relative bg-gradient-to-b from-brand-green to-brand-teal text-white py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -87,7 +87,6 @@ export default function Home() {
               <img
                 src={heroSection.background_image}
                 alt=""
-                className="rounded-lg shadow-2xl"
               />
             </div>
           </div>
@@ -96,7 +95,7 @@ export default function Home() {
 
       <ClientLogos />
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-green-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -112,7 +111,7 @@ export default function Home() {
               <Link
                 key={product.id}
                 to={`/products/${product.slug}`}
-                className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow group"
+                className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-3 border-2 border-transparent hover:border-brand-green transition-all duration-500 group"
               >
                 <div className="aspect-w-16 aspect-h-12 overflow-hidden">
                   <img
@@ -122,7 +121,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-brand-green transition-colors">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-brand-green duration-300 transition-colors">
                     {product.name}
                   </h3>
                   <p className="text-gray-600 mb-4 line-clamp-2">
@@ -149,7 +148,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -162,8 +161,8 @@ export default function Home() {
 
           <div className="space-y-8">
             {/* Custom Branding */}
-            <div className="bg-white rounded-lg shadow-md p-8 lg:p-10">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+            <div className="bg-white rounded-lg shadow-md p-8 lg:p-10 border-2 border-transparent hover:border-brand-green hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 group">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-brand-green transition-colors duration-300">
                 Best Packaging Company in India for Custom Branding
               </h3>
               <p className="text-gray-600 mb-8 max-w-4xl">
@@ -191,8 +190,8 @@ export default function Home() {
             </div>
 
             {/* Eco-Friendly */}
-            <div className="bg-white rounded-lg shadow-md p-8 lg:p-10">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+            <div className="bg-white rounded-lg shadow-md p-8 lg:p-10 border-2 border-transparent hover:border-brand-green hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 group">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-brand-green transition-colors duration-300">
                 Sustainable & Eco-Friendly Packaging Solutions
               </h3>
               <p className="text-gray-600 mb-8 max-w-4xl">
@@ -215,8 +214,8 @@ export default function Home() {
             </div>
 
             {/* Manufacturing */}
-            <div className="bg-white rounded-lg shadow-md p-8 lg:p-10">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+            <div className="bg-white rounded-lg shadow-md p-8 lg:p-10 border-2 border-transparent hover:border-brand-green hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 group">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-brand-green transition-colors duration-300">
                 Advanced Manufacturing & Quality Control
               </h3>
               <p className="text-gray-600 mb-8 max-w-4xl">
@@ -249,7 +248,7 @@ export default function Home() {
         subtitle="Businesses today require packaging that is functional, attractive, and cost-effective. Our team specializes in creating packaging solutions tailored to your industry requirements and branding goals."
       />
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-green-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center">
             Why Businesses Choose Us
@@ -318,7 +317,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-r from-brand-green to-brand-teal text-white">
+      <section className="py-16 bg-gradient-to-b from-brand-green to-brand-teal text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             Get Custom Packaging Solutions for Your Business

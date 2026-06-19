@@ -1,6 +1,6 @@
 import { Shield, Award, CheckCircle } from 'lucide-react';
 import brgsLogo from '../assets/WhatsApp_Image_2026-03-13_at_12.31.09.jpeg';
-
+import excellencelogo from "../assets/excellence.png";
 export default function Certifications() {
   const certifications = [
     {
@@ -38,7 +38,7 @@ export default function Certifications() {
 
   return (
     <div>
-      <section className="bg-gradient-to-r from-brand-green to-brand-teal text-white py-16">
+      <section className="bg-gradient-to-b from-brand-green to-brand-teal text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">Certification & Quality</h1>
           <p className="text-xl text-green-50 max-w-3xl">
@@ -138,7 +138,7 @@ export default function Certifications() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
+                src={excellencelogo}
                 alt="Quality Control"
                 className="rounded-lg shadow-xl"
               />

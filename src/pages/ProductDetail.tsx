@@ -87,7 +87,7 @@ interface ProductInfoSectionData {
 
 function ProductInfoSection({ title, intro, subSections }: Omit<ProductInfoSectionData, 'slug'>) {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{title}</h2>
@@ -95,8 +95,8 @@ function ProductInfoSection({ title, intro, subSections }: Omit<ProductInfoSecti
         </div>
         <div className="space-y-8">
           {subSections.map((sub) => (
-            <div key={sub.title} className="bg-white rounded-lg shadow-md p-8 lg:p-10">
-              <h2 className="text-2xl font-bold text-gray-900 mb-3">{sub.title}</h2>
+            <div key={sub.title} className="bg-white rounded-lg shadow-md p-8 lg:p-10 border-2 border-gray-200 hover:border-brand-green hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 group">
+              <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-brand-green transition-colors duration-300">{sub.title}</h2>
               <p className="text-gray-600 mb-8 max-w-4xl">{sub.description}</p>
               <h3 className="text-xl font-bold text-gray-900 mb-6">{sub.listTitle}</h3>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
@@ -1276,7 +1276,7 @@ export default function ProductDetail() {
           <meta name="description" content={seo.description} />
         </Helmet>
       )}
-      <section className="bg-gray-50 py-8">
+      <section className="bg-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             to="/products"
@@ -1366,7 +1366,7 @@ export default function ProductDetail() {
               <Link
                 key={industry.slug}
                 to={`/industry/${industry.slug}`}
-                className="rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow group"
+                className="rounded-lg overflow-hidden border-2 border-gray-200 hover:border-brand-green hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 group"
               >
                 <div className="aspect-w-16 aspect-h-12 overflow-hidden">
                   <img
@@ -1375,7 +1375,7 @@ export default function ProductDetail() {
                     className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="bg-gradient-to-r from-brand-green to-brand-teal py-3 px-4 text-center">
+                <div className="bg-brand-green py-3 px-4 text-center">
                   <span className="text-white font-semibold text-sm">{industry.name}</span>
                 </div>
               </Link>
@@ -1387,7 +1387,7 @@ export default function ProductDetail() {
       {productFAQSections
         .filter((section) => section.slug === product.slug)
         .map((section) => (
-          <section key={section.slug} className="py-20 bg-white">
+          <section key={section.slug} className="py-20 bg-green-50">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -1406,9 +1406,9 @@ export default function ProductDetail() {
           </section>
         ))}
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-brand-green to-brand-teal rounded-2xl p-12 text-center text-white">
+          <div className="bg-gradient-to-b from-brand-green to-brand-teal rounded-2xl p-12 text-center text-white">
             {(() => {
               const cta = productCTASections.find((section) => section.slug === product.slug);
               if (cta) {

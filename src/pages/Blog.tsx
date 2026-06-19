@@ -38,7 +38,7 @@ export default function Blog() {
 
   return (
     <div>
-      <section className="bg-gradient-to-r from-brand-green to-brand-teal text-white py-16">
+      <section className="bg-gradient-to-b from-brand-green to-brand-teal text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">Blog</h1>
           <p className="text-xl text-green-50 max-w-3xl">
@@ -63,7 +63,7 @@ export default function Blog() {
                 <Link
                   key={post.id}
                   to={`/blog/${post.slug}`}
-                  className="bg-white rounded-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow group"
+                  className="bg-white rounded-lg overflow-hidden border-2 border-gray-200 hover:border-brand-green hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 group"
                 >
                   {post.featured_image && (
                     <div className="aspect-w-16 aspect-h-9 overflow-hidden">
@@ -80,7 +80,7 @@ export default function Blog() {
                         {post.category.name}
                       </span>
                     )}
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-brand-green transition-colors line-clamp-2">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-brand-green transition-colors duration-300 line-clamp-2">
                       {post.title}
                     </h3>
                     <p className="text-gray-600 mb-4 line-clamp-3">

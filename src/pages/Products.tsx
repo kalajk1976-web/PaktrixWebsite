@@ -25,7 +25,7 @@ export default function Products() {
         <title>Custom Printed Packaging Boxes & Printing Solutions India</title>
         <meta name="description" content="Explore custom printed packaging boxes and custom printing and packaging solutions at Paktrix for premium, durable, and branded packaging needs." />
       </Helmet>
-      <section className="bg-gradient-to-r from-brand-green to-brand-teal text-white py-16">
+      <section className="bg-gradient-to-b from-brand-green to-brand-teal text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">Premium Custom Printed Packaging Boxes for Every Business</h1>
           <p className="text-xl text-green-50 max-w-3xl">
@@ -49,7 +49,7 @@ export default function Products() {
               <Link
                 key={product.id}
                 to={`/products/${product.slug}`}
-                className="bg-white rounded-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-all group"
+                className="bg-white rounded-lg overflow-hidden border-2 border-gray-200 hover:border-brand-green hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 group"
               >
                 <div className="aspect-w-16 aspect-h-12 overflow-hidden">
                   <img
@@ -59,7 +59,7 @@ export default function Products() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-brand-green transition-colors">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-brand-green transition-colors duration-300">
                     {product.name}
                   </h3>
                   <p className="text-gray-600 mb-4 line-clamp-3">

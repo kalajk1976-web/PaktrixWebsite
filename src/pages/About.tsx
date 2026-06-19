@@ -8,7 +8,7 @@ export default function About() {
         <title>About Paktrix | Leading Packaging Solutions Company in India</title>
         <meta name="description" content="Learn about Paktrix, a trusted packaging solutions company offering innovative, sustainable, and premium packaging services for brands across multiple industries in India." />
       </Helmet>
-      <section className="bg-gradient-to-r from-brand-green to-brand-teal text-white py-16">
+      <section className="bg-gradient-to-b from-brand-green to-brand-teal text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">About PAKTRIX</h1>
           <p className="text-xl text-green-50 max-w-3xl">
@@ -179,7 +179,7 @@ export default function About() {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-brand-green to-brand-teal rounded-2xl p-12 text-center text-white">
+          <div className="bg-gradient-to-b from-brand-green to-brand-teal rounded-2xl p-12 text-center text-white">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Partner With Us
             </h2>
