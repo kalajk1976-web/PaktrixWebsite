@@ -1028,7 +1028,7 @@ export default function IndustryDetail() {
               </div>
             </div>
             <div className="hidden lg:block">
-              <img
+              <img style={{"height":"29rem","maxWidth":"40rem"}}
                 src={heroSection.background_image}
                 alt=""
               />

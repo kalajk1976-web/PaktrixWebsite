@@ -10,6 +10,7 @@ import ramsonsperfumes from '../assets/client-logo/ramsonsperfumes.png';
 import stuti from '../assets/client-logo/stuti.png';
 import snitch from '../assets/client-logo/snitch.png';
 import vadilalicecream from '../assets/client-logo/vadilalicecream.png';
+import hoppits from '../assets/client-logo/hoppits.jpg';
 
 const clientLogos = [
   { src: schmitten, alt: 'Arome World' },
@@ -24,6 +25,7 @@ const clientLogos = [
   { src: stuti, alt: 'Renee Cosmetics' },
   { src: snitch, alt: 'Snitch' },
   { src: vadilalicecream, alt: 'Vadilal Ice Cream' },
+  { src: hoppits, alt: 'Hoppits' },
 ];
 
 export default function ClientLogos() {
