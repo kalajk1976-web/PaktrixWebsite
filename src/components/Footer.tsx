@@ -34,7 +34,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-sm text-gray-200 hover:text-brand-teal hover:underline underline-offset-2 transition-colors"
               >
-                <span className="font-semibold text-white">Registered Address:</span>{' '}
+                <span className="font-semibold text-white">Registered Office:</span>{' '}
                 336, LA Victoria, near galaxy circle, PAL, Surat - 394510 - Gujarat, India
               </a>
             </div>

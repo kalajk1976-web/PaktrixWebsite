@@ -247,7 +247,7 @@ export default function Contact() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Address</h3>
+                    <h3 className="font-semibold text-gray-900 mb-1">Registered Office</h3>
                     <a
                       href="https://www.google.com/maps/search/?api=1&query=336%2C+LA+Victoria%2C+near+galaxy+circle%2C+PAL%2C+Surat+-+394510+-+Gujarat%2C+India"
                       target="_blank"

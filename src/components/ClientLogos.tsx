@@ -7,7 +7,7 @@ import girnarayurvedic from '../assets/client-logo/girnarayurvedic.png';
 import haldiram from '../assets/client-logo/haldiram-nagpur.png';
 import yogabar from '../assets/client-logo/yogabar.png';
 import ramsonsperfumes from '../assets/client-logo/ramsonsperfumes.png';
-import stuti from '../assets/client-logo/stuti.png';
+import stuti from '../assets/client-logo/stuti.jpg';
 import snitch from '../assets/client-logo/snitch.png';
 import vadilalicecream from '../assets/client-logo/vadilalicecream.png';
 import hoppits from '../assets/client-logo/hoppits.jpg';
@@ -49,7 +49,7 @@ export default function ClientLogos() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Our Clients
+            We Are Trusted By
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Trusted by some of India's most recognized brands across food, beauty, fashion, and lifestyle.
