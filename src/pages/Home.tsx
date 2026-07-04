@@ -7,6 +7,7 @@ import { supabase } from '../lib/supabase';
 import ProcessCycle from '../components/ProcessCycle';
 import FAQItem from '../components/FAQItem';
 import ClientLogos from '../components/ClientLogos';
+import heroFallback from '../assets/heroImage.png';
 
 interface HeroSection {
   title: string;
@@ -23,7 +24,7 @@ export default function Home() {
     subtitle: 'In today’s competitive market, packaging is more than just a box; it reflects your brand, protects your products, and creates a strong first impression. As trusted packaging box manufacturers and packaging solutions providers in India, we deliver durable, innovative, and customized packaging solutions for industries including retail, eCommerce, food, cosmetics, pharmaceuticals, textiles, and gifting. From premium printed boxes to industrial packaging, we help businesses enhance product presentation and customer experience.',
     cta_text: 'Get in Touch',
     cta_link: '/products',
-    background_image: 'https://img.magnific.com/free-vector/illustration-gallery-icon_53876-27002.jpg'
+    background_image: heroFallback
   });
 
   useEffect(() => {
@@ -87,6 +88,7 @@ export default function Home() {
               <img style={{"height":"29rem","maxWidth":"40rem"}}
                 src={heroSection.background_image}
                 alt=""
+                onError={(e) => { (e.currentTarget as HTMLImageElement).src = heroFallback; }}
               />
             </div>
           </div>
