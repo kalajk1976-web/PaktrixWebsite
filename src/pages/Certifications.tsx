@@ -19,8 +19,8 @@ export default function Certifications() {
     {
       image: fscLogo,
       title: 'FSC Certified',
-      description: 'Food Safety Certified',
-      details: 'FSC (Food Safety Certified) certified packaging solutions ensuring safe, hygienic and compliant packaging for food-grade applications.'
+      description: 'Forest Stewardship Council Certification',
+      details: 'FSC certified packaging demonstrates our commitment to responsible forest management and sustainable sourcing, ensuring eco-conscious, responsibly sourced packaging for food-grade applications.'
     }
   ];
 

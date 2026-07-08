@@ -1,5 +1,6 @@
 import { Target, Eye, Award, Users, Globe, TrendingUp } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import aboutUs from '../assets/aboutUs.jpg';
 
 export default function About() {
   return (
@@ -47,9 +48,8 @@ export default function About() {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/4483942/pexels-photo-4483942.jpeg"
+                src={aboutUs}
                 alt="Manufacturing Facility"
-                className="rounded-lg shadow-xl"
               />
             </div>
           </div>
