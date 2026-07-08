@@ -1,7 +1,7 @@
 import { Shield, Award, CheckCircle } from 'lucide-react';
 import brgsLogo from '../assets/WhatsApp_Image_2026-03-13_at_12.31.09.jpeg';
 import excellencelogo from "../assets/excellence.png";
-import fscLogo from '../assets/fscLogo.jpg';
+import fssaiLogo from '../assets/fssai.jpeg';
 export default function Certifications() {
   const certifications = [
     {
@@ -17,10 +17,10 @@ export default function Certifications() {
       details: 'Certified for food packaging safety standards, ensuring our materials meet the highest requirements for food contact applications.'
     },
     {
-      image: fscLogo,
-      title: 'FSC Certified',
-      description: 'Forest Stewardship Council Certification',
-      details: 'FSC certified packaging demonstrates our commitment to responsible forest management and sustainable sourcing, ensuring eco-conscious, responsibly sourced packaging for food-grade applications.'
+      image: fssaiLogo,
+      title: 'FSSAI Compliant',
+      description: 'Food Safety and Standards Authority of India',
+      details: 'Our packaging solutions comply with FSSAI regulations, ensuring food-safe materials, hygienic manufacturing practices, and full adherence to India\'s food safety and labelling standards.'
     }
   ];
 
