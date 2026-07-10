@@ -2,6 +2,8 @@ import { Shield, Award, CheckCircle } from 'lucide-react';
 import brgsLogo from '../assets/WhatsApp_Image_2026-03-13_at_12.31.09.jpeg';
 import excellencelogo from "../assets/excellence.png";
 import fssaiLogo from '../assets/fssai.jpeg';
+import fscLogo from '../assets/fscLogo.jpg';
+import fsscLogo from '../assets/fssc.jpg';
 export default function Certifications() {
   const certifications = [
     {
@@ -20,7 +22,19 @@ export default function Certifications() {
       image: fssaiLogo,
       title: 'FSSAI Compliant',
       description: 'Food Safety and Standards Authority of India',
-      details: 'Our packaging solutions comply with FSSAI regulations, ensuring food-safe materials, hygienic manufacturing practices, and full adherence to India\'s food safety and labelling standards.'
+      details: 'Compliance with FSSAI regulations, ensuring food-safe materials, hygienic manufacturing practices, and full adherence to India\'s food safety and labelling standards.'
+    },
+    {
+      image: fscLogo,
+      title: 'FSC Certified',
+      description: 'Forest Stewardship Council',
+      details: 'Reflects our commitment to responsible forest management and sustainable sourcing for eco-conscious packaging solutions.'
+    },
+    {
+      image: fsscLogo,
+      title: 'FSSC 22000',
+      description: 'Food Safety System Certification',
+      details: 'FSSC 22000 certified, meeting internationally recognised food safety management standards for safe and reliable packaging production.'
     }
   ];
 
@@ -65,39 +79,11 @@ export default function Certifications() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            {certifications.slice(0, 2).map((cert, index) => (
+          <div className="grid md:grid-cols-2 gap-8">
+            {certifications.map((cert, index) => (
               <div
                 key={index}
                 className="bg-gradient-to-br from-green-50 to-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow"
-              >
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    {cert.icon ? (
-                      <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-green rounded-lg">
-                        <cert.icon className="h-8 w-8 text-white" />
-                      </div>
-                    ) : (
-                      <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-lg border-2 border-gray-200">
-                        <img src={cert.image} alt={cert.title} className="w-14 h-14 object-contain" />
-                      </div>
-                    )}
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold text-gray-900 mb-2">{cert.title}</h3>
-                    <p className="text-brand-green font-medium mb-3">{cert.description}</p>
-                    <p className="text-gray-600 leading-relaxed">{cert.details}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="flex justify-center">
-            {certifications.slice(2).map((cert, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-green-50 to-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow w-full md:w-1/2"
               >
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
